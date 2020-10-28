@@ -59,11 +59,13 @@ body {
   color: #666;
   font-size: 15px;
 }
-.container .content .card a{
+a{
   position: relative;
   display: inline-block;
-  padding: 10 20px;
+  padding: 10px 20px;
   background: #000;
+  color: #fff;
   text-decoration: none;
   margin-top: 20px;
+  border-radius: 20px;
 }
