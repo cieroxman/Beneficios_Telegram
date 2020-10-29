@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Syne Mono', monospace;
 }
-
 body {
   display: flex;
   justify-content: center;
@@ -15,7 +14,8 @@ body {
   background: linear-gradient(45deg, #9CECFB, #65C7F7, #0052D4);
   background-attachment: fixed;
 }
-.container{
+.container
+{
   position: relative;
   width: 1150px;
   padding: 20px;
@@ -33,7 +33,19 @@ body {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 25px rgba(0, 0, 0,0.4);
-  transition: 0.5s;
+  transition: 0.8s;
+}
+/*Blur*/
+
+.container:hover .card{
+  filter: blur(10px);
+  transform: scale(1.1);
+  opacity: 1;
+}
+.container .card:hover{
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
 }
 .container .card .circle {
   position: relative;
@@ -69,12 +81,20 @@ a{
   margin-top: 20px;
   border-radius: 20px;
 }
-
+/*Change color*/
 .container .card:nth-child(1) .circle,
 .container .card:nth-child(1) .content a{
-  background: #1a5cc596;
+  background: #2f00ff96;
 }
 .container .card:nth-child(2) .circle,
 .container .card:nth-child(2) .content a{
-  background: #50da1196;
+  background: #51ff00e5;
+}
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .content a{
+  background: #ffbb00;
+}
+.container .card:nth-child(4) .circle,
+.container .card:nth-child(4) .content a{
+  background: #ff000096;
 }
