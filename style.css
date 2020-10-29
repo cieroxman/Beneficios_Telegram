@@ -69,3 +69,12 @@ a{
   margin-top: 20px;
   border-radius: 20px;
 }
+
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .content a{
+  background: #1a5cc596;
+}
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .content a{
+  background: #50da1196;
+}
